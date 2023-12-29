@@ -24,19 +24,24 @@ To analyze the Horizontal Gene Transfer (HGT) activity in the three brine pools 
 
 # Results
 
-![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/q_pretrim.png)
+
+<p float="left">
+  <img src="https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/q_pretrim.png" width="49.5%" />
+  <img src="https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/q_posttrim.png" width="49.5%" />
+</p>
+
 ### Figure 1 – Quality profiles per sample before trimming 
 graphs show a general quality drop after at location 450.
 
-
-![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/q_posttrim.png)
 ### Figure 2 – Quality profiles per sample after trimming
 Reads were truncated at location 450 to remove low quality bases.
+
 
 
 ![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/err.png)
 ### Figure 3 – Estimated error rates per sample
 Error rates for all samples show normal deviation from the optimal error.
+
 
 
 | Sample       | Input  | Filtered | Denoised | Nonchim |
@@ -50,27 +55,32 @@ Error rates for all samples show normal deviation from the optimal error.
 The processing steps show no significant loss of the data.
 
 
-![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/shannon.png)
+
+<p float="left">
+  <img src="https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/shannon.png" width="49.5%" />
+  <img src="https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/bray.png" width="49.5%" />
+</p>
+
 ### Figure 4 – Alpha diversity measure using Shannon index.
 Samples show difference in Shannon index.
 
-
-![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/bray.png)
 ### Figure 5 – Beta diversity measure using Bray-Curtis index.
 Samples show difference in Bray-Curtis index.
 
 
 ![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/phylo.png)
-Figure 6 – Phylogeny Tree with Abundance
+### Figure 6 – Phylogeny Tree with Abundance
 The tree shows qualitative diversity as many phyla are present in the samples and quantitative diversity as phyla abundance is varied.
 
 
-![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/family_box.png)
+<p float="left">
+  <img src="https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/family_box.png" width="49.5%" />
+  <img src="https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/genus_box.png" width="49.5%" />
+</p>
+
 ### Figure 7 – Top Families Identified per Sample
 The boxplot shows families dominating different samples.
 
-
-![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/genus_box.png)
 ### Figure 8 – Top Genus Identified per Sample
 The boxplot shows Genus dominating different samples.
 
@@ -87,12 +97,63 @@ The boxplot shows Genus dominating different samples.
 Highest active pathways after filtration and annotation
 
 
-![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/pca.png)
+<img src="https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/pca.png" width="100%" />
+
 ### Figure 9 – Pathway Differential Abundance PCA
 Samples show a clear distinction and can be separated by pool
 
+<img src="https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/heatmap.png" width="100%" />
 
-![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/heatmap.png)
-Figure 10 – Pathway Differential Abundance Heatmap
+### Figure 10 – Pathway Differential Abundance Heatmap
 Different samples within the same pool show different pathway abundance
+
+# Discussion
+The quality plots shown in figure 1 show that the quality of the reads generally drop below a Phred score of 20  at location 450 in all datasets, hence why the value 450 was chosen as the trimming point for all the reads. Figure 2 shows the quality plots for the datasets after trimming, which depicts an overall improvement in the quality of the reads. Figure 3 shows a graphic representation of the error model produced based on the trimmed reads, which shows a normal deviation from the optimal error rate. Tracing the reads between processes showed no significant drop in the amount of data, which means the data is of high quality. The alpha diversity measure, shown in figure 4, shows a higher diversity in Atlantis II pool compared to Discovery Deep pool. Atlantis II pool scored 4.36, meaning that around 4 species dominate the sample, while Discovery Deep pool scored 4.12 which was not very different than Atlantis II. The beta diversity analysis with Bray-Curtis index in figure 5 was performed between the three pools showed differences between samples, with one sample from Discovery Deep close to Atlantis II samples in diversity.
+The phylogeny tree in figure 6 shows the main phyla present in the samples. A qualitative as well as quantitative diversity are shown through the tree as there are various phyla in the samples with different abundances. Thaumarchaeota appears to be the most dominant across the tree, with the highest number of species and their respective abundances. The main reason behind Thaumarchaeota abundance is their ability to adapt to extreme environments. Red Sea brine pools are a highly saline and anoxic environment with high pressure and temperature. Thaumarchaeota are known to be the most abundant archaea on earth and have been found in various extreme environments. They display several adaptations to extreme environments, including the ability to survive high salinity and low ammonia conditions. Previous comparative genomics studies have revealed unique adaptations of Thaumarchaeota that allow them to survive harsh conditions, such as the presence of specific membrane lipids and conserved signature indels (Schouten et al., 2008). They are also capable of ammonia oxidation, which is a key metabolic feature that allows them to survive in environments with low ammonia (Zhang et al., 2020). This result is also consistent with other metagtenomic studies that showed that the abundance of Thaumarchaeota is particularly high in various Red Sea brine pools samples, indicating their specialization in these environments (Ziko et al., 2019). Euryarchaeota also appear in relatively high abundance in the tree. This can be due to several reasons, of which the most important is their osmoregulation, which is crucial to survive in highly saline environments (Castro‐Fernandez et al., 2017). Some Euryarchaeota are also methanogenic, they utilize unique enzymes and coenzymes to produce methane from carbon dioxide and hydrogen, which can serve as an energy source for other microorganisms (Huber, 2006).
+The filtered box plots in figures 7 and 8 came consistent with the phylogeny tree for Atlantis II samples and Discovery section 7 sample which was consistent with the data obtained from Bray-Curtis diversity index in figure 6, yet Chain deep and Discovery Deep section 3 samples show very different distribution than the rest. The top family in the first mentioned three was Nitrosopumilaceae, which belongs to phylum Thaumarchaeota. Nitrosopumilaceae developed adaptations including the use of alternative electron acceptors to yield energy, such as iron, manganese, sulfate, elemental sulfur, carbon dioxide, nitrite, and nitrate (Zhang et al., 2020). The other family that showed noticeable abundance was Methanomassiliicoccales, which belongs to phylum Euryarchaeota. Species from this family can be found in various habitats, including hydrothermal vents and anoxic brine pools. They can tolerate up to 30% salinity levels and grow optimally in hypersaline conditions (around 15%) (Bueno de Mesquita et al., 2021). For Chain Deep and Discovery Deep section 1, SAR11 (Pelagibacterales) was the only abundant family. This was surprising as SAR11 are more adapted to oxic environments (Bougouffa et al., 2013). The genus in figure 8 shows the same trend of contrast between the samples which might be due to the spatial heterogeneity caused by high salinity levels in these brine pools.
+To investigate HGT activity, PCA and heatmap were constructed to select the richest and most representative sample for pathway annotation. Figure 9 shows the difference between samples with principal components, the points were inseparable by pool, mostly due to the big difference in the metagenomic makeup of Discovery Deep section 1 sample. Section 7 sample was closer to Atlantis II samples which makes sense since they were similar in metagenomic composition. The heatmap in figure 10 also showed a difference in pathway abundance between all the samples, mostly in Discovery Deep section 1. The pathway analysis was done on Discovery Deep section 7 only since it conveyed the criteria mentioned above. The pathway analysis showed that HGT is not present in the sample, however, it showed other information on the pathways present. The highest abundant pathways in this environment were related to photosynthesis, Lipopolysaccharide biosynthesis, and flagellar assembly. The high abundance of photosynthesis-related pathways, such as photosystem I, II, and cytochrome b6/f complex, suggests that photosynthesis is a crucial process in this ecosystem despite its depth under the sea. Genes involved in lipopolysaccharide biosynthesis were highly abundant, which suggests that lipopolysaccharide production is an essential process in the microorganisms inhabiting this brine pool.
+
+
+
+# Conclusion
+While the main goal of this study was to explore the role of HGT in shaping microbial communities within the Red Sea brine pool environments, the direct detection of HGT associated pathways was not achieved. However, the comprehensive analysis yielded insights into the diverse microbial communities and functional characteristics present in Atlantis II, Discovery, and Chain Deep brine pools. The analysis showed the high dominance of Thaumarchaeota and Euryarchaeota in Atlantis II samples and one sample from Discovery Deep. The spatial heterogeneity observed within the brine pools resulted in the variability in microbial compositions in the two Discovery Deep samples. The prevalence of pathways related to photosynthesis and lipopolysaccharide biosynthesis highlighted essential biological processes within these extreme environments. With only five samples analyzed, this information serves as a first glance in the comparison between the differences in microbial communities and pathways present in the three brine pools analyzed. 
+# Limitations
+Of the primary limitations of this study is the low number of samples analyzed from the three brine pools. The small sample size often restricts the representation of the microbial communities in these complex environments. The findings might not represent the real landscape present in the analyzed pools. The study utilized PICRUSt2 R package to predict the pathways based on alignment of 16S rRNA data. While this approach offers insights into the functional potential, it relies on inference and prediction rather than direct genomic sequencing. This predictive nature could easily introduce inaccuracies which can potentially limit the validity of the predicted functional profiles. To ensure robustness and accuracy, the use of shotgun sequencing techniques would be indispensable for an accurate assessment of the functional potential.
+# References
+
+- Bougouffa, S., Yang, J. K., Lee, O. O., Wang, Y., Batang, Z., Al-Suwailem, A., & Qian, P. Y. (2013). Distinctive microbial community structure in highly stratified deep-sea brine water columns. Applied and Environmental Microbiology, 79(11), 3425–3437. [Link](https://doi.org/10.1128/aem.00254-13)
+
+- Bueno de Mesquita, C. P., Zhou, J., Theroux, S. M., & Tringe, S. G. (2021). Methanogenesis and salt tolerance genes of a novel halophilic Methanosarcinaceae metagenome-assembled genome from a former Solar Saltern. Genes, 12(10), 1609. [Link](https://doi.org/10.3390/genes12101609)
+
+- Elbehery, A. H. A., Beason, E., & Siam, R. (2023). Metagenomic profiling of antibiotic resistance genes in Red Sea brine pools. Archives of Microbiology, 205(5). [Link](https://doi.org/10.1007/s00203-023-03531-x)
+
+- Harding, T., Roger, A. J., & Simpson, A. G. B. (2017). Adaptations to high salt in a halophilic protist: Differential expression and gene acquisitions through duplications and gene transfers. Frontiers in Microbiology, 8(MAY). [Link](https://doi.org/10.3389/fmicb.2017.00944)
+
+- Huber, H. (2006). Euryarchaeota. Encyclopedia of Life Sciences. [Link](https://doi.org/10.1038/npg.els.0004243)
+
+- López-Aladid, R., Fernández-Barat, L., Alcaraz-Serrano, V., Bueno-Freire, L., Vázquez, N., Pastor-Ibáñez, R., Palomeque, A., Oscanoa, P., & Torres, A. (2023). Determining the most accurate 16S rrna hypervariable region for taxonomic identification from respiratory samples. Scientific Reports, 13(1). [Link](https://doi.org/10.1038/s41598-023-30764-z)
+
+- McMURDIE, P. J., & HOLMES, S. (2011). PHYLOSEQ: A bioconductor package for handling and analysis of high-throughput phylogenetic sequence data. Biocomputing 2012. [Link](https://doi.org/10.1142/9789814366496_0023)
+
+- Ochman, H., Lawrence2, J. G., & Groisman3, E. A. (2000). Lateral gene transfer and the nature of bacterial innovation. In NATURE (Vol. 405). [Link](www.nature.com)
+
+- Ombrello, A. K. (2020). DADA2. Encyclopedia of Medical Immunology, 251–257. [Link](https://doi.org/10.1007/978-1-4614-8678-7_118)
+
+- Parkhill, J., Sebaihia, M., Preston, A., Murphy, L. D., Thomson, N., Harris, D. E., Holden, M. T. G., Churcher, C. M., Bentley, S. D., Mungall, K. L., Cerdeño-Tárraga, A. M., Temple, L., James, K., Harris, B., Quail, M. A., Achtman, M., Atkin, R., Baker, S., Basham, D., … Maskell, D. J. (2003). Comparative analysis of the genome sequences of bordetella pertussis, bordetella parapertussis and bordetella bronchiseptica. Nature Genetics, 35(1), 32–40. [Link](https://doi.org/10.1038/ng1227)
+
+- Qian, P. Y., Wang, Y., Lee, O. O., Lau, S. C. K., Yang, J., Lafi, F. F., Al-Suwailem, A., & Wong, T. Y. H. (2011). Vertical stratification of microbial communities in the Red Sea revealed by 16S rDNA pyrosequencing. ISME Journal, 5(3), 507–518. [Link](https://doi.org/10.1038/ismej.2010.112)
+
+- Schliep, K. P. (2010). Phangorn: Phylogenetic analysis in R. Bioinformatics, 27(4), 592–593. [Link](https://doi.org/10.1093/bioinformatics/btq706)
+
+- Schouten, S., Hopmans, E. C., Baas, M., Boumann, H., Standfest, S., Könneke, M., Stahl, D. A., & Sinninghe Damsté, J. S. (2008). Intact membrane lipids of candidatus Nitrosopumilus Maritimus,” a cultivated representative of the cosmopolitan Mesophilic Group I Crenarchaeota. Applied and Environmental Microbiology, 74(8), 2433–2440. [Link](https://doi.org/10.1128/aem.01709-07)
+
+- Tully, B. (2016). Quality Assessment: FASTQC V1. [Link](https://doi.org/10.17504/protocols.io.fa3bign)
+
+- Yang, C., Mai, J., Cao, X., Burberry, A., Cominelli, F., & Zhang, L. (2023). GGPICRUST2: An R package for picrust2 predicted functional profile analysis and visualization. Bioinformatics, 39(8). [Link](https://doi.org/10.1093/bioinformatics/btad470)
+
+- Ziko, L., Adel, M., Malash, M. N., & Siam, R. (2019). Insights into Red Sea brine pool specialized metabolism gene clusters encoding potential metabolites for biotechnological applications and Extremophile Survival. Marine Drugs, 17(5), 273. [Link](https://doi.org/10.3390/md17050273)
+
+- Zhang, X.-H., Zhong, H., Lehtovirta-Morley, L., Liu, J., Zheng, Y., Lin, H., Song, D., Todd, J. D., & Tian, J. (2020). Novel Insights into the Thaumarchaeota in the Deepest Oceans: Their Metabolism and Potential Adaptation Mechanisms. [Link](https://doi.org/10.21203/rs.3.rs-162
+
+
 
