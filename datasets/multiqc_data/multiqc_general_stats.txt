@@ -1,0 +1,6 @@
+Sample	FastQC_mqc-generalstats-fastqc-percent_duplicates	FastQC_mqc-generalstats-fastqc-avg_sequence_length	FastQC_mqc-generalstats-fastqc-percent_fails	FastQC_mqc-generalstats-fastqc-median_sequence_length	FastQC_mqc-generalstats-fastqc-percent_gc	FastQC_mqc-generalstats-fastqc-total_sequences
+SRR1351543_AtlantisS3	90.3986155865855	490.4889604964793	50.0	489	51.0	16758.0
+SRR1351547_AtlantisS5	87.93914084630435	490.93546126215574	50.0	489	52.0	34243.0
+SRR1351550_ChainS1	75.88546296729518	538.2191082206522	50.0	549	49.0	21373.0
+SRR1351556_DiscoveryS1	71.44797609345287	539.100981876043	50.0	549	52.0	25767.0
+SRR1351674_DiscoveryS7	89.10320734381388	490.4700635522355	50.0	489	52.0	26907.0

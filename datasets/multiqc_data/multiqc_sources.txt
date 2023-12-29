@@ -1,0 +1,6 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR1351550_ChainS1	/home/menyawino/btt/Project/Datasets/fastqc/SRR1351550_ChainS1_fastqc.zip
+FastQC	all_sections	SRR1351556_DiscoveryS1	/home/menyawino/btt/Project/Datasets/fastqc/SRR1351556_DiscoveryS1_fastqc.zip
+FastQC	all_sections	SRR1351543_AtlantisS3	/home/menyawino/btt/Project/Datasets/fastqc/SRR1351543_AtlantisS3__fastqc.zip
+FastQC	all_sections	SRR1351547_AtlantisS5	/home/menyawino/btt/Project/Datasets/fastqc/SRR1351547_AtlantisS5_fastqc.zip
+FastQC	all_sections	SRR1351674_DiscoveryS7	/home/menyawino/btt/Project/Datasets/fastqc/SRR1351674_DiscoveryS7_fastqc.zip
