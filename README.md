@@ -36,12 +36,14 @@ graphs show a general quality drop after at location 450.
 ### Figure 2 – Quality profiles per sample after trimming
 Reads were truncated at location 450 to remove low quality bases.
 
+---
 
 
 ![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/err.png)
 ### Figure 3 – Estimated error rates per sample
 Error rates for all samples show normal deviation from the optimal error.
 
+---
 
 
 | Sample       | Input  | Filtered | Denoised | Nonchim |
@@ -54,6 +56,7 @@ Error rates for all samples show normal deviation from the optimal error.
 ### Table 1 – Number of Reads Through Processing
 The processing steps show no significant loss of the data.
 
+---
 
 
 <p float="left">
@@ -67,11 +70,13 @@ Samples show difference in Shannon index.
 ### Figure 5 – Beta diversity measure using Bray-Curtis index.
 Samples show difference in Bray-Curtis index.
 
+---
 
 ![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/phylo.png)
 ### Figure 6 – Phylogeny Tree with Abundance
 The tree shows qualitative diversity as many phyla are present in the samples and quantitative diversity as phyla abundance is varied.
 
+---
 
 <p float="left">
   <img src="https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/family_box.png" width="49.5%" />
@@ -84,6 +89,7 @@ The boxplot shows families dominating different samples.
 ### Figure 8 – Top Genus Identified per Sample
 The boxplot shows Genus dominating different samples.
 
+---
 
 | Rank | Pathway                             | Rank | Pathway                             |
 |------|-------------------------------------|------|-------------------------------------|
@@ -96,21 +102,29 @@ The boxplot shows Genus dominating different samples.
 ### Table 2 – Highest Abundant Pathways in Discovery Deep section 7
 Highest active pathways after filtration and annotation
 
+---
 
 <img src="https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/pca.png" width="100%" />
 
 ### Figure 9 – Pathway Differential Abundance PCA
 Samples show a clear distinction and can be separated by pool
 
+---
+
 <img src="https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/heatmap.png" width="100%" />
 
 ### Figure 10 – Pathway Differential Abundance Heatmap
 Different samples within the same pool show different pathway abundance
 
+---
+
 # Discussion
 The quality plots shown in figure 1 show that the quality of the reads generally drop below a Phred score of 20  at location 450 in all datasets, hence why the value 450 was chosen as the trimming point for all the reads. Figure 2 shows the quality plots for the datasets after trimming, which depicts an overall improvement in the quality of the reads. Figure 3 shows a graphic representation of the error model produced based on the trimmed reads, which shows a normal deviation from the optimal error rate. Tracing the reads between processes showed no significant drop in the amount of data, which means the data is of high quality. The alpha diversity measure, shown in figure 4, shows a higher diversity in Atlantis II pool compared to Discovery Deep pool. Atlantis II pool scored 4.36, meaning that around 4 species dominate the sample, while Discovery Deep pool scored 4.12 which was not very different than Atlantis II. The beta diversity analysis with Bray-Curtis index in figure 5 was performed between the three pools showed differences between samples, with one sample from Discovery Deep close to Atlantis II samples in diversity.
+
 The phylogeny tree in figure 6 shows the main phyla present in the samples. A qualitative as well as quantitative diversity are shown through the tree as there are various phyla in the samples with different abundances. Thaumarchaeota appears to be the most dominant across the tree, with the highest number of species and their respective abundances. The main reason behind Thaumarchaeota abundance is their ability to adapt to extreme environments. Red Sea brine pools are a highly saline and anoxic environment with high pressure and temperature. Thaumarchaeota are known to be the most abundant archaea on earth and have been found in various extreme environments. They display several adaptations to extreme environments, including the ability to survive high salinity and low ammonia conditions. Previous comparative genomics studies have revealed unique adaptations of Thaumarchaeota that allow them to survive harsh conditions, such as the presence of specific membrane lipids and conserved signature indels (Schouten et al., 2008). They are also capable of ammonia oxidation, which is a key metabolic feature that allows them to survive in environments with low ammonia (Zhang et al., 2020). This result is also consistent with other metagtenomic studies that showed that the abundance of Thaumarchaeota is particularly high in various Red Sea brine pools samples, indicating their specialization in these environments (Ziko et al., 2019). Euryarchaeota also appear in relatively high abundance in the tree. This can be due to several reasons, of which the most important is their osmoregulation, which is crucial to survive in highly saline environments (Castro‐Fernandez et al., 2017). Some Euryarchaeota are also methanogenic, they utilize unique enzymes and coenzymes to produce methane from carbon dioxide and hydrogen, which can serve as an energy source for other microorganisms (Huber, 2006).
+
 The filtered box plots in figures 7 and 8 came consistent with the phylogeny tree for Atlantis II samples and Discovery section 7 sample which was consistent with the data obtained from Bray-Curtis diversity index in figure 6, yet Chain deep and Discovery Deep section 3 samples show very different distribution than the rest. The top family in the first mentioned three was Nitrosopumilaceae, which belongs to phylum Thaumarchaeota. Nitrosopumilaceae developed adaptations including the use of alternative electron acceptors to yield energy, such as iron, manganese, sulfate, elemental sulfur, carbon dioxide, nitrite, and nitrate (Zhang et al., 2020). The other family that showed noticeable abundance was Methanomassiliicoccales, which belongs to phylum Euryarchaeota. Species from this family can be found in various habitats, including hydrothermal vents and anoxic brine pools. They can tolerate up to 30% salinity levels and grow optimally in hypersaline conditions (around 15%) (Bueno de Mesquita et al., 2021). For Chain Deep and Discovery Deep section 1, SAR11 (Pelagibacterales) was the only abundant family. This was surprising as SAR11 are more adapted to oxic environments (Bougouffa et al., 2013). The genus in figure 8 shows the same trend of contrast between the samples which might be due to the spatial heterogeneity caused by high salinity levels in these brine pools.
+
 To investigate HGT activity, PCA and heatmap were constructed to select the richest and most representative sample for pathway annotation. Figure 9 shows the difference between samples with principal components, the points were inseparable by pool, mostly due to the big difference in the metagenomic makeup of Discovery Deep section 1 sample. Section 7 sample was closer to Atlantis II samples which makes sense since they were similar in metagenomic composition. The heatmap in figure 10 also showed a difference in pathway abundance between all the samples, mostly in Discovery Deep section 1. The pathway analysis was done on Discovery Deep section 7 only since it conveyed the criteria mentioned above. The pathway analysis showed that HGT is not present in the sample, however, it showed other information on the pathways present. The highest abundant pathways in this environment were related to photosynthesis, Lipopolysaccharide biosynthesis, and flagellar assembly. The high abundance of photosynthesis-related pathways, such as photosystem I, II, and cytochrome b6/f complex, suggests that photosynthesis is a crucial process in this ecosystem despite its depth under the sea. Genes involved in lipopolysaccharide biosynthesis were highly abundant, which suggests that lipopolysaccharide production is an essential process in the microorganisms inhabiting this brine pool.
 
 
