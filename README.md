@@ -25,3 +25,74 @@ To analyze the Horizontal Gene Transfer (HGT) activity in the three brine pools 
 # Results
 
 ![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/q_pretrim.png)
+### Figure 1 – Quality profiles per sample before trimming 
+graphs show a general quality drop after at location 450.
+
+
+![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/q_posttrim.png)
+### Figure 2 – Quality profiles per sample after trimming
+Reads were truncated at location 450 to remove low quality bases.
+
+
+![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/err.png)
+### Figure 3 – Estimated error rates per sample
+Error rates for all samples show normal deviation from the optimal error.
+
+
+| Sample       | Input  | Filtered | Denoised | Nonchim |
+|--------------|-------:|---------:|---------:|--------:|
+| AtlantisS3   | 16758  | 15262    | 14978    | 11833   |
+| AtlantisS5   | 34243  | 26043    | 25529    | 21927   |
+| ChainS1      | 21373  | 16313    | 13396    | 10811   |
+| DiscoveryS1  | 25767  | 20279    | 15086    | 12530   |
+| DiscoveryS7  | 26907  | 24059    | 23561    | 19218   |
+### Table 1 – Number of Reads Through Processing
+The processing steps show no significant loss of the data.
+
+
+![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/shannon.png)
+### Figure 4 – Alpha diversity measure using Shannon index.
+Samples show difference in Shannon index.
+
+
+![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/bray.png)
+### Figure 5 – Beta diversity measure using Bray-Curtis index.
+Samples show difference in Bray-Curtis index.
+
+
+![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/phylo.png)
+Figure 6 – Phylogeny Tree with Abundance
+The tree shows qualitative diversity as many phyla are present in the samples and quantitative diversity as phyla abundance is varied.
+
+
+![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/family_box.png)
+### Figure 7 – Top Families Identified per Sample
+The boxplot shows families dominating different samples.
+
+
+![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/genus_box.png)
+### Figure 8 – Top Genus Identified per Sample
+The boxplot shows Genus dominating different samples.
+
+
+| Rank | Pathway                             | Rank | Pathway                             |
+|------|-------------------------------------|------|-------------------------------------|
+| 1    | Photosynthesis                      | 6    | Taurine and hypotaurine metabolism |
+| 2    | Lipopolysaccharide biosynthesis     | 7    | Photosynthesis - antenna proteins  |
+| 3    | Flagellar assembly                  | 8    | Carotenoid biosynthesis             |
+| 4    | Tetracycline biosynthesis           | 9    | Arachidonic acid metabolism         |
+| 5    | Ascorbate and aldarate metabolism   | 10   | Biofilm formation                   |
+
+### Table 2 – Highest Abundant Pathways in Discovery Deep section 7
+Highest active pathways after filtration and annotation
+
+
+![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/pca.png)
+### Figure 9 – Pathway Differential Abundance PCA
+Samples show a clear distinction and can be separated by pool
+
+
+![Alt text](https://github.com/menyawino/Forecasting-HGT-Activity-in-Three-Red-Sea-Brine-Pools/blob/main/results/heatmap.png)
+Figure 10 – Pathway Differential Abundance Heatmap
+Different samples within the same pool show different pathway abundance
+
